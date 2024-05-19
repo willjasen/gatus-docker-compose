@@ -8,7 +8,7 @@ services:
     container_name: gatus
     user: '999:999'
     volumes:
-      - /home/willjasen/config.yaml:/config/config.yaml:ro
+      - /home/willjasen/gatus-docker-compose/config.yaml:/config/config.yaml:ro
     networks:
       - gatus-network
     ports:
