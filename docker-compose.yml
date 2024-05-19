@@ -8,11 +8,11 @@ services:
     container_name: gatus
     user: '999:999'
     volumes:
-      - ./config.yaml:/config/config.yaml:ro
+      - /home/willjasen/config.yaml:/config/config.yaml:ro
     networks:
       - gatus-network
     ports:
-      - "8080:8080"
+      - "18080:8080"
     security_opt:
       - no-new-privileges:true
     cap_drop:
