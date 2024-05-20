@@ -52,7 +52,7 @@ endpoints:
     conditions:
       - "[DOMAIN_EXPIRATION] > 720h"
 
-   - name: willjasen.com monitor
+  - name: willjasen.com monitor
     group: internal
     url: "https://willjasen.com/"
     interval: 5m
