@@ -52,9 +52,23 @@ endpoints:
     conditions:
       - "[DOMAIN_EXPIRATION] > 720h"
 
-  - name: willjasen.com monitor
-    group: internal
+  - name: willjasen.com
+    group: willjasen websites
     url: "https://willjasen.com/"
+    interval: 5m
+    conditions:
+      - "[STATUS] == 200"
+
+  - name: family.willjasen.com
+    group: willjasen websites
+    url: "https://family.willjasen.com/"
+    interval: 5m
+    conditions:
+      - "[STATUS] == 200"
+
+  - name: old.willjasen.com
+    group: willjasen websites
+    url: "https://old.willjasen.com/"
     interval: 5m
     conditions:
       - "[STATUS] == 200"
